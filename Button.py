@@ -18,7 +18,7 @@ class Button:
         screen.blit(self.text, self.rect)
 
     def check_for_input(self, position):
-        if (position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top - self.font_size, self.rect.bottom + self.font_size)):
+        if (position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top - self.font_size//2, self.rect.bottom + self.font_size//2)):
             return True
         else:
             return False
